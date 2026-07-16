@@ -1,0 +1,24 @@
+{
+  "articleId": "article-001",
+  "sourceUrl": "https://example.com/source",
+  "draft": {
+    "title": "AI draft title",
+    "subtitle": "AI draft subtitle",
+    "summary": "AI draft summary",
+    "markdown": "# AI draft\n\nDraft paragraph."
+  },
+  "edited": {
+    "title": "Human title",
+    "subtitle": "Human subtitle",
+    "summary": "Human summary",
+    "markdown": "# Human title\n\nFinal paragraph."
+  },
+  "editor": "human",
+  "editedAt": "2026-07-16T00:00:00.000Z",
+  "metrics": {
+    "views": 0,
+    "reads": 0,
+    "claps": 0,
+    "responses": 0
+  }
+}
