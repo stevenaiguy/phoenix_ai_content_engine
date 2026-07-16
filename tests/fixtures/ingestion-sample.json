@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "source": "rss",
+      "title": "AI Agent 與工作流",
+      "url": "https://example.com/posts/ai-agent",
+      "content": "AI Agent 不只生成文字，也應根據工具結果決定下一步。",
+      "language": "zh-TW",
+      "publishedAt": "2026-07-16T00:00:00.000Z"
+    },
+    {
+      "source": "telegram",
+      "title": "",
+      "url": "https://x.com/example/status/123456789",
+      "content": "值得延伸成長文的貼文內容。",
+      "language": "zh-TW"
+    }
+  ]
+}
