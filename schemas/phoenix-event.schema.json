@@ -1,0 +1,218 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://phoenix.local/schemas/phoenix-event.schema.json",
+  "title": "Phoenix Event Contract v2",
+  "type": "object",
+  "required": [
+    "version",
+    "metadata"
+  ],
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^2\\.\\d+\\.\\d+$"
+    },
+    "article": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "language": {
+          "type": "string"
+        },
+        "author": {
+          "type": "string"
+        },
+        "publishedAt": {
+          "type": "string"
+        },
+        "content": {
+          "type": "string"
+        },
+        "images": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "analysis": {
+      "type": "object",
+      "properties": {
+        "topic": {
+          "type": "string"
+        },
+        "coreIdea": {
+          "type": "string"
+        },
+        "audience": {
+          "type": "string"
+        },
+        "score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "shouldWrite": {
+          "type": "boolean"
+        },
+        "angles": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "researchQuestions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "riskNotes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "research": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "styleRag": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "writingMemoryContext": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "promptContext": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "draft": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "publication": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "feedback": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "eventId": {
+          "type": "string"
+        },
+        "eventType": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "type": "string"
+        },
+        "timezone": {
+          "type": "string"
+        },
+        "language": {
+          "type": "string"
+        },
+        "currentWorkflow": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "history": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "workflow": {
+                "type": "string"
+              },
+              "version": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string"
+              },
+              "timestamp": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "workflow",
+              "version",
+              "status",
+              "timestamp"
+            ],
+            "additionalProperties": true
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "error": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "message": {
+          "type": "string"
+        },
+        "workflow": {
+          "type": "string"
+        },
+        "details": {
+          "type": "array"
+        }
+      },
+      "required": [
+        "code",
+        "message",
+        "workflow"
+      ],
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}
