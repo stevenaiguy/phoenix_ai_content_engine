@@ -1,0 +1,21 @@
+{
+  "id": "sample-001",
+  "source": "manual",
+  "title": "AI Agent 與工作流",
+  "url": "https://example.com/sample",
+  "language": "zh-TW",
+  "content": "AI Agent 不應只是生成文字，也應根據工具結果規劃下一步。",
+  "images": [],
+  "tags": [
+    "AI",
+    "n8n"
+  ],
+  "score": 0,
+  "shouldWrite": false,
+  "analysis": {},
+  "metadata": {
+    "createdAt": "2026-07-16T07:30:00+08:00",
+    "collector": "fixture",
+    "version": "1.0.0"
+  }
+}

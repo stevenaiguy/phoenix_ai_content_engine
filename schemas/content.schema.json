@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://phoenix.local/schemas/content.schema.json",
+  "title": "Phoenix Content",
+  "type": "object",
+  "required": [
+    "id",
+    "source",
+    "url",
+    "content",
+    "language",
+    "metadata"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source": {
+      "type": "string",
+      "enum": [
+        "webhook",
+        "rss",
+        "telegram",
+        "manual",
+        "x"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "language": {
+      "type": "string",
+      "default": "zh-TW"
+    },
+    "content": {
+      "type": "string",
+      "minLength": 1
+    },
+    "images": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "shouldWrite": {
+      "type": "boolean"
+    },
+    "analysis": {
+      "type": "object",
+      "properties": {
+        "topic": {
+          "type": "string"
+        },
+        "coreIdea": {
+          "type": "string"
+        },
+        "audience": {
+          "type": "string"
+        },
+        "angles": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "metadata": {
+      "type": "object",
+      "required": [
+        "createdAt",
+        "version"
+      ],
+      "properties": {
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "collector": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}
