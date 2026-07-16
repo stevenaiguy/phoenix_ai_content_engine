@@ -1,0 +1,8 @@
+{
+  "name": "Phoenix AI Content Engine",
+  "version": "0.1.0",
+  "timezone": "Asia/Taipei",
+  "language": "zh-TW",
+  "dailyLimit": 1,
+  "draftFormat": "markdown"
+}

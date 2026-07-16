@@ -1,0 +1,9 @@
+{
+  "timezone": "Asia/Taipei",
+  "daily": {
+    "hour": 7,
+    "minute": 30
+  },
+  "maxItemsPerRun": 10,
+  "maxDraftsPerDay": 1
+}

@@ -1,0 +1,8 @@
+{
+  "provider": "qdrant-cloud",
+  "collection": "medium_style_chunks",
+  "topK": 6,
+  "scoreThreshold": 0.55,
+  "chunkSize": 900,
+  "chunkOverlap": 120
+}
