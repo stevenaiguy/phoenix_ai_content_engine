@@ -1,0 +1,28 @@
+{
+  "memoryId": "memory:article-001:sample",
+  "feedbackId": "feedback:article-001:sample",
+  "articleId": "article-001",
+  "writingMemory": {
+    "profileVersion": "1.0.0",
+    "rules": [
+      {
+        "category": "title",
+        "rule": "標題優先使用問題式結構",
+        "evidence": [
+          "example"
+        ],
+        "confidence": 0.65
+      }
+    ],
+    "avoidPhrases": [
+      "在這個快速變化的時代"
+    ],
+    "preferredPatterns": [
+      "直接提出具體問題"
+    ],
+    "summary": "作者偏好更直接的寫法。"
+  },
+  "metadata": {
+    "status": "memory_generated"
+  }
+}
