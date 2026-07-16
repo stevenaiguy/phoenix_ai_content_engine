@@ -1,0 +1,30 @@
+{
+  "id": "manual:https://example.com/ai-agent",
+  "source": "manual",
+  "title": "AI Agent 與工作流",
+  "url": "https://example.com/ai-agent",
+  "language": "zh-TW",
+  "content": "AI Agent 不應只負責生成文字，也應根據工具結果規劃下一步。",
+  "score": 85,
+  "shouldWrite": true,
+  "analysis": {
+    "topic": "AI Agent",
+    "coreIdea": "AI Agent 應根據工具結果規劃下一步",
+    "audience": "n8n 與自動化使用者",
+    "angles": [
+      "Agent orchestration"
+    ],
+    "keywords": [
+      "AI Agent",
+      "workflow automation"
+    ],
+    "researchQuestions": [
+      "什麼是 AI Agent？"
+    ],
+    "riskNotes": []
+  },
+  "metadata": {
+    "createdAt": "2026-07-16T00:00:00.000Z",
+    "status": "analyzed"
+  }
+}
