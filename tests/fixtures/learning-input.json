@@ -1,0 +1,34 @@
+{
+  "feedbackId": "feedback:article-001:sample",
+  "articleId": "article-001",
+  "originalDraft": {
+    "title": "AI draft",
+    "markdown": "# AI draft\n\nGeneric opening."
+  },
+  "finalVersion": {
+    "title": "Why does this fail?",
+    "markdown": "# Why does this fail?\n\nDirect opening."
+  },
+  "editorialDiff": {
+    "titleChanged": true,
+    "changes": [
+      {
+        "type": "replaced",
+        "before": "Generic opening.",
+        "after": "Direct opening."
+      }
+    ],
+    "stats": {
+      "totalChanges": 1
+    }
+  },
+  "metrics": {
+    "views": 0,
+    "reads": 0,
+    "claps": 0,
+    "responses": 0
+  },
+  "metadata": {
+    "status": "feedback_collected"
+  }
+}
