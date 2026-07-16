@@ -1,0 +1,20 @@
+{
+  "article": {
+    "title": "AI Agent 不只是生成文字",
+    "subtitle": "從工具呼叫到流程決策",
+    "summary": "本文拆解 AI Agent 在工作流中的真正角色。",
+    "tags": [
+      "AI",
+      "n8n"
+    ],
+    "markdown": "# AI Agent 不只是生成文字\n\n已通過審核的草稿。"
+  },
+  "review": {
+    "score": 90,
+    "approved": true,
+    "issues": []
+  },
+  "metadata": {
+    "status": "approved"
+  }
+}
