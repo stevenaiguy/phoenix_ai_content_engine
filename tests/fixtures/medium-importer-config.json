@@ -1,0 +1,8 @@
+{
+  "mediumRssUrl": "https://medium.com/feed/@example",
+  "qdrantBaseUrl": "https://example.cloud.qdrant.io",
+  "collection": "medium_style_chunks_v2",
+  "embeddingModel": "nvidia/llama-nemotron-embed-1b-v2",
+  "chunkSize": 900,
+  "chunkOverlap": 120
+}
