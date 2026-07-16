@@ -38,4 +38,4 @@
 ## 目前內容
 
 此版本建立 Repository 骨架、設定、資料 Schema、Analyzer Prompt 與驗證腳本。
-實際 n8n Workflow JSON 會在確認目標 n8n 版本及節點 typeVersion 後加入，避免交付不可匯入的假 JSON。
+已加入第一個以 n8n 2.29.7 為目標的 `workflows/00-bootstrap.json`。
